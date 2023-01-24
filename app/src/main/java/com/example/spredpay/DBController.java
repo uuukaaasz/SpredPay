@@ -21,14 +21,27 @@ public class DBController extends SQLiteOpenHelper {
 
     private void init(SQLiteDatabase db) {
         db.execSQL(
-                "create table if not exists quiz (" +
+                "create table if not exists users (" +
                         "id integer primary key autoincrement," +
                         "username text," +
                         "password text," +
                         "pin_code integer," +
-                        "bank float," +
-                        "crypto float," +
+                        "bank integer," +
+                        "crypto integer," +
                         "spred float);" + "");
+
+        db.execSQL(
+                "create table if not exists bank (" +
+                        "id integer primary key autoincrement," +
+                        "bank_name text," +
+                        "amount float," +
+                        "pin_code integer);" + "");
+
+        db.execSQL(
+                "create table if not exists crypto (" +
+                        "id integer primary key autoincrement," +
+                        "crypto_name text," +
+                        "amount float);" + "");
     }
 
     //-------------------------- USERS --------------------------
@@ -46,7 +59,7 @@ public class DBController extends SQLiteOpenHelper {
 
     public List<SpinnerObject> getDataById(int Id) {
         List<SpinnerObject> read = new ArrayList<SpinnerObject>();
-        String query =  "SELECT users.id, quiz.question" +
+        String query =  "SELECT users.id" +
                 " FROM" + " users" +
                 " WHERE users.id = " + Id;
         SQLiteDatabase db = getReadableDatabase();
