@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_payment"
+    android:padding="20dp"
+    tools:context=".ChooseCardActivity">
+
+    <ImageView
+        android:id="@+id/ic_arrow_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/ic_arrow_back" />
+
+    <TextView
+        android:id="@+id/textview_choosepayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Payment"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/view_bank"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/payment_bg" />
+
+    <TextView
+        android:id="@+id/tv_bank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_choosepayment"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="28dp"
+        android:text="Bank accounts"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view_crypto"
+        android:layout_width="68dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/view_bank"
+        android:background="@drawable/payment_bg"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/tv_crypto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_choosepayment"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="28dp"
+        android:layout_toEndOf="@+id/view_bank"
+        android:gravity="center"
+        android:text="Crypto"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view_spred"
+        android:layout_width="64dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/view_crypto"
+        android:background="@drawable/payment_bg"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_spred"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_choosepayment"
+        android:layout_toEndOf="@+id/view_crypto"
+        android:layout_marginTop="28dp"
+        android:layout_marginStart="33dp"
+        android:text="Spred"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageview_card"
+        android:layout_width="280dp"
+        android:layout_height="400dp"
+        android:layout_below="@+id/textview_choosepayment"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp"
+        android:src="@drawable/img_bank_card" />
+
+    <TextView
+        android:id="@+id/text_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="345dp"
+        android:text="Revolut"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_payment_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_payment"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:text="Show balance"
+        android:textColor="#000"
+        android:textSize="14sp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageView_double_faceID"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/imageview_card"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_faceid" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageView_hold_near"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/imageview_card"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/img_hold_near"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

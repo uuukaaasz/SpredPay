@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TerminalPaymentActivity">
+
+    <TextView
+        android:id="@+id/terminal_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="50,00 €"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/hold_near_merchant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/terminal_edittext"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/hold_near_merchant" />
+
+    <ImageView
+        android:id="@+id/qr_merchant"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/hold_near_merchant"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/qr" />
+
+    <View
+        android:id="@+id/merchant_done_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_above="@+id/terminal_back_button"
+        android:background="@drawable/ic_done_button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/merchant_done_button"
+        android:layout_alignBottom="@+id/merchant_done_button"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Go to homepage"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/terminal_back_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/transparent_button_back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/terminal_back_button"
+        android:layout_alignBottom="@+id/terminal_back_button"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Cancel charge"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TerminalTypeAmountActivity">
+
+    <ImageView
+        android:id="@+id/ic_arrow_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_arrow_back" />
+
+    <TextView
+        android:id="@+id/textview_terminal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Terminal"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/terminal_confirm"
+        android:layout_below="@+id/textview_terminal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/terminal_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/currencytxtview"
+            android:text="0,00"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/currencytxtview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text=" €"
+            android:textColor="#000"
+            android:textSize="40sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/terminal_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_keys"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#EBEBEB"
+        android:padding="10dp"
+        android:text="Charge"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/layout_keys"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_alignParentBottom="true"
+        android:background="#D1D3D9">
+
+        <Button
+            android:id="@+id/terminal_1"
+            android:layout_width="100dp"
+            android:layout_height="56dp"
+            android:layout_toStartOf="@+id/terminal_2"
+            android:layout_above="@id/terminal_4"
+            android:backgroundTint="#fff"
+            android:text="1"
+            android:textColor="#000"
+            android:textSize="25sp"  />
+
+        <Button
+            android:id="@+id/terminal_2"
+            android:layout_width="100dp"
+            android:layout_height="56dp"
+            android:layout_above="@+id/terminal_5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#fff"
+            android:text="2"
+            android:textColor="#000"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/terminal_3"
+            android:layout_width="100dp"
+            android:layout_height="56dp"
+            android:layout_toEndOf="@+id/terminal_2"
+            android:layout_above="@id/terminal_6"
+            android:backgroundTint="#fff"
+            android:text="3"
+            android:textColor="#000"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/terminal_4"
+            android:layout_width="100dp"
+            android:layout_height="56dp"
+            android:layout_toStartOf="@+id/terminal_5"
+            android:layout_above="@id/terminal_7"
+            android:backgroundTint="#fff"
+            android:text="4"
+            android:textColor="#000"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/terminal_5"
+            android:layout_width="100dp"
+            android:layout_height="56dp"
+            android:layout_above="@+id/terminal_8"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#fff"
+            android:text="5"
+            android:textColor="#000"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/terminal_6"
+            android:layout_width="100dp"
+            android:layout_height="56dp"
+            android:layout_toEndOf="@+id/terminal_5"
+            android:layout_above="@id/terminal_9"
+            android:backgroundTint="#fff"
+            android:text="6"
+            android:textColor="#000"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/terminal_7"
+            android:layout_width="100dp"
+            android:layout_height="56dp"
+            android:layout_toStartOf="@+id/terminal_8"
+            android:layout_above="@id/terminal_coma"
+            android:backgroundTint="#fff"
+            android:text="7"
+            android:textColor="#000"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/terminal_8"
+            android:layout_width="100dp"
+            android:layout_height="56dp"
+            android:layout_above="@id/terminal_0"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#fff"
+            android:text="8"
+            android:textColor="#000"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/terminal_9"
+            android:layout_width="100dp"
+            android:layout_height="56dp"
+            android:layout_toEndOf="@+id/terminal_8"
+            android:layout_above="@id/terminal_correct"
+            android:backgroundTint="#fff"
+            android:text="9"
+            android:textColor="#000"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/terminal_coma"
+            android:layout_width="100dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/terminal_0"
+            android:backgroundTint="#fff"
+            android:text=","
+            android:textColor="#000"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/terminal_0"
+            android:layout_width="100dp"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="50dp"
+            android:backgroundTint="#fff"
+            android:text="0"
+            android:textColor="#000"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/terminal_correct"
+            android:layout_width="100dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="50dp"
+            android:layout_toEndOf="@+id/terminal_0"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="#fff"
+            android:text="C"
+            android:textColor="#000"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

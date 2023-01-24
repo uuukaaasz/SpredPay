@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_transparent_layout"
+    tools:context=".SettingsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SETTINGS"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="#000"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A setting is where and when the Spred.app is set."
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="3dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bank settings"
+            android:backgroundTint="#777"
+            app:cornerRadius="15dp" />
+
+        <Button
+            android:id="@+id/crypto_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crypto settings"
+            android:backgroundTint="#777"
+            app:cornerRadius="15dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Spred settings"
+            android:backgroundTint="#777"
+            app:cornerRadius="15dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notifications"
+            android:backgroundTint="@color/black"
+            app:cornerRadius="15dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Security"
+            android:backgroundTint="@color/black"
+            app:cornerRadius="15dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Support"
+            android:backgroundTint="@color/black"
+            app:cornerRadius="15dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Language"
+            android:backgroundTint="@color/black"
+            app:cornerRadius="15dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About us"
+            android:backgroundTint="@color/black"
+            app:cornerRadius="15dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/holo_blue_dark"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="© 2023 by Spred. All rights reserved"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="3dp" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

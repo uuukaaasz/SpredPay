@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CryptoSettings">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_transparent_layout">
+
+            <TextView
+                android:id="@+id/home_totalBalanceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:text="Total balance"
+                android:textColor="#858585"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/home_totalBalanceValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_totalBalanceTextView"
+                android:layout_marginStart="16dp"
+                android:text="0 €"
+                android:textColor="#000"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/home_your_wallets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_totalBalanceValue"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Your wallets"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/bitcoin"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/home_your_wallets"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/home_bg"
+                android:elevation="32dp" />
+
+            <ImageView
+                android:id="@+id/ic_bitcoin"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_below="@+id/home_your_wallets"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="26dp"
+                android:src="@drawable/ic_bitcoin"
+                android:translationZ="90dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_your_wallets"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
+                android:layout_toEndOf="@+id/ic_bitcoin"
+                android:text="Bitcoin"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:translationZ="90dp" />
+
+            <TextView
+                android:id="@+id/bitcoin_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_your_wallets"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="31dp"
+                android:text="1310.44 €"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:translationZ="90dp" />
+
+            <TextView
+                android:id="@+id/bitcoin_percentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bitcoin_amount"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="31dp"
+                android:text="+1.8%"
+                android:textColor="#219653"
+                android:textSize="14sp"
+                android:translationZ="90dp" />
+
+
+
+            <View
+                android:id="@+id/ethereum"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/bitcoin"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/home_bg"
+                android:elevation="32dp" />
+
+            <ImageView
+                android:id="@+id/ic_ethereum"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_below="@+id/bitcoin"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="26dp"
+                android:src="@drawable/ic_ethereum"
+                android:translationZ="90dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bitcoin"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
+                android:layout_toEndOf="@+id/ic_ethereum"
+                android:text="Ethereum"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:translationZ="90dp" />
+
+            <TextView
+                android:id="@+id/ethereum_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bitcoin"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="31dp"
+                android:text="761.21 €"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:translationZ="90dp" />
+
+            <TextView
+                android:id="@+id/ethereum_percentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ethereum_amount"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="31dp"
+                android:text="+0.3%"
+                android:textColor="#219653"
+                android:textSize="14sp"
+                android:translationZ="90dp" />
+
+            <View
+                android:id="@+id/solana"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/ethereum"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/home_bg"
+                android:elevation="32dp" />
+
+            <ImageView
+                android:id="@+id/ic_solana"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_below="@+id/ethereum"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="26dp"
+                android:src="@drawable/ic_solana"
+                android:translationZ="90dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ethereum"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
+                android:layout_toEndOf="@+id/ic_ethereum"
+                android:text="Solana"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:translationZ="90dp" />
+
+            <TextView
+                android:id="@+id/solana_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ethereum"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="31dp"
+                android:text="99.01 €"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:translationZ="90dp" />
+
+            <TextView
+                android:id="@+id/solana_percentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/solana_amount"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="31dp"
+                android:text="+2.4%"
+                android:textColor="#219653"
+                android:textSize="14sp"
+                android:translationZ="90dp" />
+
+            <View
+                android:id="@+id/ripple"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/solana"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/home_bg"
+                android:elevation="32dp" />
+
+            <ImageView
+                android:id="@+id/ic_ripple"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_below="@+id/solana"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="26dp"
+                android:src="@drawable/ic_ripple"
+                android:translationZ="90dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/solana"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
+                android:layout_toEndOf="@+id/ic_ripple"
+                android:text="Ripple"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:translationZ="90dp" />
+
+            <TextView
+                android:id="@+id/ripple_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/solana"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="31dp"
+                android:text="30.91 €"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:translationZ="90dp" />
+
+            <TextView
+                android:id="@+id/ripple_percentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ripple_amount"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="31dp"
+                android:text="-0.8%"
+                android:textColor="#F44336"
+                android:textSize="14sp"
+                android:translationZ="90dp" />
+
+            <View
+                android:id="@+id/doge"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/ripple"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/home_bg"
+                android:elevation="32dp" />
+
+            <ImageView
+                android:id="@+id/ic_doge"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_below="@+id/ripple"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="26dp"
+                android:src="@drawable/ic_doge"
+                android:translationZ="90dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ripple"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
+                android:layout_toEndOf="@+id/ic_doge"
+                android:text="Doge"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:translationZ="90dp" />
+
+            <TextView
+                android:id="@+id/doge_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ripple"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="31dp"
+                android:text="512.06 €"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:translationZ="90dp" />
+
+            <TextView
+                android:id="@+id/doge_percentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/doge_amount"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="31dp"
+                android:text="-0.1%"
+                android:textColor="#F44336"
+                android:textSize="14sp"
+                android:translationZ="90dp" />
+
+            <View
+                android:id="@+id/bnb"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/doge"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/home_bg"
+                android:elevation="32dp" />
+
+            <ImageView
+                android:id="@+id/ic_bnb"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_below="@+id/doge"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="26dp"
+                android:src="@drawable/ic_bnb"
+                android:translationZ="90dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/doge"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
+                android:layout_toEndOf="@+id/ic_bnb"
+                android:text="BNB"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:translationZ="90dp" />
+
+            <TextView
+                android:id="@+id/bnb_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/doge"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="31dp"
+                android:text="132.12 €"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:translationZ="90dp" />
+
+            <TextView
+                android:id="@+id/bnb_percentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bnb_amount"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="31dp"
+                android:text="+0.3%"
+                android:textColor="#219653"
+                android:textSize="14sp"
+                android:translationZ="90dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
